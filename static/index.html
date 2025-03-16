@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLASSTAB-ICS-BACKEND</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f5f5f5; /* 偏白色背景 */
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+            background: #fff; /* 纯白色容器 */
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* 轻盈的阴影 */
+            max-width: 600px;
+            width: 100%;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            font-weight: bold;
+            color: #333;
+        }
+        .status {
+            font-size: 1rem;
+            color: #666;
+        }
+        .status-code {
+            color: #81c784; /* 柔和的绿色表示正常状态 */
+            font-weight: bold;
+        }
+        /* 背景动画 */
+        @keyframes moveBackground {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+        .background-shapes {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+        .shape {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.05); /* 浅灰色背景形状 */
+            border-radius: 50%;
+            animation: moveBackground 10s infinite ease-in-out;
+        }
+        .shape:nth-child(1) {
+            width: 200px;
+            height: 200px;
+            top: 10%;
+            left: 5%;
+        }
+        .shape:nth-child(2) {
+            width: 150px;
+            height: 150px;
+            top: 60%;
+            left: 80%;
+            animation-delay: 2s;
+        }
+        .shape:nth-child(3) {
+            width: 100px;
+            height: 100px;
+            top: 30%;
+            left: 70%;
+            animation-delay: 4s;
+        }
+    </style>
+</head>
+<body>
+    <!-- 背景动画形状 -->
+    <div class="background-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <!-- 主要内容 -->
+    <div class="container">
+        <h1>CLASSTAB-ICS-BACKEND</h1>
+        <p class="status">
+            API 接口运行正常，状态码：<span class="status-code">200</span>
+        </p >
+    </div>
+</body>
+</html>
