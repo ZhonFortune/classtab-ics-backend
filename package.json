@@ -1,13 +1,12 @@
 {
-  "name": "classtab-ics-backend",
-  "version": "0.0.0",
+  "name": "cltab-ics-bend",
+  "version": "0.0.9",
   "main": "index.js",
   "scripts": {
-    "dev": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node index.js"
   },
   "bin":{
-    "citabi-backend": "index.js"
+    "cltabi-bend": "index.js"
   },
   "author": "",
   "license": "ISC",
