@@ -4,7 +4,7 @@
 
 <br>
 
-[安装](#install) | [前端](https://github.com/ZhonFortune/classtab-ics/) | [使用文档]()
+[安装](#install) | [前端](https://github.com/ZhonFortune/classtab-ics/) | [使用文档](https://zhonfortune.github.io/classtab-ics/#/)
 
 ---
 
@@ -16,7 +16,7 @@
 <br>
 
 # 安装 :rocket: <a id="install"></a>
-[使用教程]()
+[使用教程](https://zhonfortune.github.io/classtab-ics/#/)
 
 ```shell
 #安装

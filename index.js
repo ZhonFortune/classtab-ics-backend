@@ -132,9 +132,9 @@ app.use(express.static(staticPath));
 
 // token生成
 function createToken(name, password, level) {
-    const path = name + level + password;
-    const token = CryptoJS.MD5(path).toString();
-    return token;
+    const path = password + name + level + password;
+    const crypto = CryptoJS.MD5(path).toString();
+    return crypto;
 }
 
 // 生成CID
